@@ -1,0 +1,231 @@
+/* carga de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@400;700&display=swap');
+@font-face{
+  font-family: 'adelia';
+  src:url(../assets/fonts/adelia.ttf);
+}
+
+/* reseteo de valores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header{
+  .contenedorLogo{
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    /* background-color: green; */ /*test de colores para dimensionar elementos*/
+    .logo{ /* solo el logotipo */
+        align-items: left;
+      object-fit: cover;
+      /* background-color: yellowgreen; */ /*test de colores para dimensionar elementos*/
+    } 
+    .tituloPrincipal{ /* titulo principal h1 */ 
+      text-align:left;
+      width:auto;
+      font-size:4rem;
+      display: inline-block;
+      font-family: 'adelia';
+      color: rgb(0, 0, 0);
+      /* background-color: blue; *//*test de colores para dimensionar elementos*/
+    }   
+  }
+  background-color: palevioletred;
+ .navegacion{/* nav */
+    display: inline-block;
+    width: 100%; 
+    .listaNav{/* ul */
+      list-style: none;
+      text-align: center;
+      .listaItem{
+        display: inline-block;
+        .linkNav{ /* a */
+          display: inline-block;
+          text-decoration: none;
+          color: brown;
+          font-size: 1.5rem;
+          text-align: right;
+          margin-right: 20px;
+          margin-bottom: 20px;
+          font-family: 'Laila', sans-serif;
+          font-weight: 700;
+          border: 3px solid rgba(0, 0, 0, 0.445);
+          border-radius: 20px;
+          background-color: rgb(240, 168, 192);
+          padding: 0 5px;
+        }
+      }
+    }
+ }
+}
+.main{
+  width: 100%;
+  background-color: rgb(255, 120, 194);
+  padding-bottom: 50px;
+  .contenedorSubtitulos{
+    .subtitulo{
+      text-align: center;
+      font-size: 2.5rem;
+      font-family: 'Laila', sans-serif;
+      font-weight: 700;
+      
+    }
+  }
+  /* ACA EMPIEZA LA IMAGEN DE FONDO DEL INDEX */
+  .imagenPrincipal{/* imagen de fondo principal en INDEX */
+    width: 100%;
+    display: inline-block;
+  }
+
+  .imagenPrincipal img{
+    width: 100%;
+    object-fit: cover;
+  }
+  /* ACA EMPIEZA EL APARTADO DE LAS 3 TARJETAS QUE APARECEN EN EL INDEX */
+  .contenedorTarjetas{ /* contenedor de las 3 tarjetas que aparecen en index */
+    width: 90%;
+    margin: 30px auto;
+    text-align: center;
+  }
+
+  .tarjeta{ /* tarjetas que aparecen en el index */
+    background-color: lightcoral;
+    width: 30%;
+    display: inline-block;
+    border: 10px solid black;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+
+  .tarjeta img{
+    width: 100%;
+    object-fit: cover;
+  }
+  /* ACA SE DA ESTILO A LOS PARRAFOS DE TODA LA PAGINA */
+  .parrafo p{ /* este afecta a los testimonios porque tiene mas especificidad */
+    font-size: 1.3rem;
+    font-family: 'Laila', sans-serif;
+    text-align: justify;
+    margin: auto 30px;
+  }
+}
+  /* ACA EMPIEZA EL ESTILO DEL VIDEO QUE ESTA EN LA PAGINA SERVICIOS */
+.video{ /* video de youtube en servicios.html */
+  width: 100%;
+  text-align: center;
+  margin: auto auto;
+}
+.video iframe{ /* video de youtube en servicios.html */
+  border: 10px solid red;
+  border-radius: 10px;
+}
+  /* ACA EMPIEZA LA SECCION DE TESTIMONIOS EN INDEX */
+.contenedorTestimonio{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  .testimonio{
+    background-color: rgb(236, 110, 142);
+    width: 95%;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 5;
+  }
+}
+
+/* GALERIA.HTML */
+.parrafoGaleria{
+    font-size: 1.3rem;
+    font-family: 'Laila', sans-serif;
+    text-align: center;
+    margin: auto 30px;
+}
+.contenedorPadre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    gap: 15px;
+   /*  align-items: center; */
+}
+.hijo{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+.hijo img{
+    border: 2px solid white;
+    border-radius: 8px;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+
+
+  /* ACA EMPIEZA TODO LO QUE TIENE QUE VER CON EL FOOTER */
+.footer{
+  background-color: rgb(255, 0, 0);
+  background-image:url(../assets/img/waves.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  width: 100%;
+}
+.derechosReservados { /* texto del footer(derechos reservados, etc */
+  text-align: center;
+  color: rgb(0, 0, 0);
+  line-height: 1.5rem;
+  font-weight: bold;
+  font-size: large;
+}
+
+.partesFooter{ /* contenedor de todo lo de abajo */
+  display: inline-block;
+  width: 30%;
+  margin: 20px 1%;
+  text-align: center;
+}
+    
+.partesFooter iframe{ /* mapa */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.partesFooter  h3{/* titulo de las redes sociales */
+  color: white;
+  font-family: 'Laila', sans-serif;
+  font-weight: 700;
+}
+
+.redes{/* LOGOS REDES SOCIALES */
+  /* background-color: red; */
+  font-size: 3rem;
+  color:white;
+  display: inline-block;
+}
+
+.formulario{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin: 50px 0;
+}
+
