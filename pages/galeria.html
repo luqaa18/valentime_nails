@@ -7,24 +7,53 @@
         <title>Galeria | Valentime Nails</title>
         <link rel="icon" href="../favicon.ico">
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilos.css">
     </head>
     <body>
-      <header class="header">
-        <div class="contenedorLogo">
-            <a href="../index.html"><img class="logo" src="../assets/img/valentime_1.png" alt="logo" width="250" height="250"></a>
-            <h1 class="tituloPrincipal">Galería</h1>
-        </div>
-        <nav class="navegacion">
-            <ul class="listaNav">
-                <li class="listaItem"><a class="linkNav" href="../index.html">Inicio</a></li>
-                <li class="listaItem"><a class="linkNav" href="nosotros.html">Nosotros</a></li>
-                <li class="listaItem"><a class="linkNav" href="servicios.html">Servicios</a></li>
-                <li class="listaItem"><a class="linkNav" href=#">Galeria</a></li>
-                <li class="listaItem"><a class="linkNav" href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-      </header>  
+        <header class="header">
+            <!-- <div class="contenedorLogo">
+                <a href="#"><img class="logo" src="./assets/img/valentime_1.png" alt="logo Valentime" width="250" height="250"></a>
+                <h1 class="tituloPrincipal">Valentime Nails</h1>
+            </div>            
+            <nav class="navegacion">
+                <ul class="listaNav">
+                    <li class="listaItem"><a class="linkNav" href="#">Inicio</a></li>
+                    <li class="listaItem"><a class="linkNav" href="./pages/nosotros.html">Nosotros</a></li>
+                    <li class="listaItem"><a class="linkNav" href="./pages/servicios.html">Servicios</a></li>
+                    <li class="listaItem"><a class="linkNav" href="./pages/galeria.html">Galeria</a></li>
+                    <li class="listaItem"><a class="linkNav" href="./pages/contacto.html">Contacto</a></li>
+                 </ul>
+            </nav>           -->
+            <nav class="navbar navbar-expand-lg navbar-light colorNav">
+                <div class="container-fluid">
+                  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                  <a href="../index.html"><img src="../assets/img/valentime.png" alt="logo" width="150"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end linkNav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Galería</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                          </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
       <main class="main">
         <section class="contenedorSubtitulos">
             <h2 class="subtitulo">Nuestros trabajos</h2>
@@ -32,43 +61,45 @@
         <section class="parrafoGaleria">
             <p>Si hay algo que nos caracteriza, es que entregamos el corazón en cada trabajo. Y estos trabajos son prueba de ello...</p>
         </section>
-        <section class="contenedorPadre">
-                <div class="hijo">
-                    <img src="../assets/img/galeria/uñas1.jpg" alt="">
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <img src="../assets/img/galeria/uñas1.jpg" alt="" class="img-fluid">
                 </div>
-                <div class="hijo">
-                    <img src="../assets/img/galeria/uñas2.jpg" alt="">
+                <div class="col-4">
+                    <img src="../assets/img/galeria/uñas2.jpg" alt="" class="img-fluid">
                 </div>
-                <div class="hijo">
-                    <img src="../assets/img/galeria/uñas3.jpg" alt="">
+                <div class="col-4">
+                    <img src="../assets/img/galeria/uñas3.jpg" alt="" class="img-fluid">
                 </div>
-                <div class="hijo">
-                    <img src="../assets/img/galeria/uñas4.jpg" alt="">
+                <div class="col-4">
+                    <img src="../assets/img/galeria/uñas4.jpg" alt="" class="img-fluid">
                 </div>
-                <div class="hijo">
-                    <img src="../assets/img/galeria/uñas5.jpg" alt="">
+                <div class="col-4">
+                    <img src="../assets/img/galeria/uñas5.jpg" alt="" class="img-fluid">
                 </div>
-                <div class="hijo">
-                    <img src="../assets/img/galeria/uñas6.jpg" alt="">
+                <div class="col-4">
+                    <img src="../assets/img/galeria/uñas6.jpg" alt="" class="img-fluid">
                 </div>
-                <div class="hijo">
-                    <img src="../assets/img/galeria/uñas7.jpg" alt="">
+                <div class="col-4">
+                    <img src="../assets/img/galeria/uñas7.jpg" alt="" class="img-fluid">
                 </div>
-                <div class="hijo">
-                    <img src="../assets/img/galeria/uñas8.jpg" alt="">
+                <div class="col-4">
+                    <img src="../assets/img/galeria/uñas8.jpg" alt="" class="img-fluid">
                 </div>
-                <div class="hijo">
-                    <img src="../assets/img/galeria/uñas9.jpg" alt="">
+                <div class="col-4">
+                    <img src="../assets/img/galeria/uñas9.jpg" alt="" class="img-fluid">
                 </div>
-                <div class="hijo">
-                    <img src="../assets/img/galeria/uñas10.jpg" alt="">
+                <div class="col-4">
+                    <img src="../assets/img/galeria/uñas10.jpg" alt="" class="img-fluid">
                 </div>
-                <div class="hijo">
-                    <img src="../assets/img/galeria/uñas11.jpg" alt="">
+                <div class="col-4">
+                    <img src="../assets/img/galeria/uñas11.jpg" alt="" class="img-fluid">
                 </div>
-                <div class="hijo">
-                    <img src="../assets/img/galeria/uñas12.jpg" alt="">
+                <div class="col-4">
+                    <img src="../assets/img/galeria/uñas12.jpg" alt="" class="img-fluid">
                 </div>
+            </div>
         </section>
       </main>
       <footer class="footer">  
@@ -88,5 +119,6 @@
                 <a class="wsp" target="_blank" href="https://www.whatsapp.com/?lang=es_LA"><iconify-icon icon="ic:baseline-whatsapp" class="redes"></iconify-icon></a>
         </section>
         </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
