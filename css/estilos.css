@@ -26,6 +26,26 @@
   font-size: 2rem;
 }
 
+.containerBanner{
+background-image: url(../assets/img/banner_large.jpg);
+width: 100%;
+background-size: cover;
+height: 75vh;
+position: relative;
+align-items: center;
+background-position: center;
+background-color: rgb(50, 50, 50);
+background-blend-mode: soft-light;
+}
+
+.tituloBanner{
+  text-align: center;
+  color: white;
+}
+.textoBanner{
+  color: white;
+}
+
 .cards{
   height: 300px;
   width: 300px;
