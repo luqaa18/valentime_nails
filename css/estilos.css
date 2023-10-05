@@ -12,25 +12,57 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: #8F8181;
+}
+
+/* INICIO BARRA DE NAVEGACION */
+.linkVN{
+  text-decoration: none;
+  color: black;
+}
+.linkVN:hover{
+  color: black;
+}
 .colorNav {
-  background-color: #c19899;
+  background-color: #F8B8BF;
 }
 
 .tituloNav{
   font-family: 'adelia';
-  font-size: 4rem;
+  font-size: 1.8rem;
   padding-left: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
 }
-
 .disenoLinks{
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
+.disenoLinks:hover{
+  transition: 0.5s;
+  border-radius: 10px;
+  background-color: rgb(255, 192, 203);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+/* FIN BARRA DE NAVEGACIÓN */
+/* FOOTER */
+.footer{
+  background-color: #F8B8BF;
+}
+
+footer .tituloNav{
+  padding: 0;
+  margin: 0;
+}
+/* FOOTER */
 .containerBanner{
 background-image: url(../assets/img/banner_large.jpg);
 width: 100%;
 background-size: cover;
-height: 75vh;
+height: 60vh;
 position: relative;
 align-items: center;
 background-position: center;
@@ -47,11 +79,32 @@ background-blend-mode: soft-light;
 }
 
 .cards{
-  height: 300px;
   width: 300px;
+  height: 350px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-bottom: 35px;
 }
+
 .cards img{
   width: 100%;
-  height:100%;
+  height: 80%;
   object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+}
+
+/* PAGINA GALERIA */
+.containerPrincipalGal{
+  row-gap: 24px;
+
+}
+
+.containerImgGal img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
 }
