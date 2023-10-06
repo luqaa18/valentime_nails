@@ -41,14 +41,16 @@
           </nav>
       </header>
       <main class="main">
-        <section class="contenedorSubtitulos">
-            <h2 class="subtitulo">Nuestros trabajos</h2>
-        </section>  
-        <section class="parrafoGaleria">
-            <p>Si hay algo que nos caracteriza, es que entregamos el corazón en cada trabajo. Y estos trabajos son prueba de ello...</p>
-        </section>
+        <div class="d-flex">
+          <div class="tituloBanner container">
+            <h1 class="tituloBanner1">Nuestros trabajos</h1>
+            <p class="textoBanner texto">
+              Si hay algo que nos caracteriza, es que entregamos el corazón en cada trabajo. Y estos trabajos son prueba de ello...
+            </p>
+          </div>
+        </div>
         <section class="container">
-            <div class="row p-5 justify-content-center align-items-center containerPrincipalGal">
+            <div class="row p-4 justify-content-center align-items-center containerPrincipalGal">
                 <div class="containerImgGal col-sm-6 col-md-4"><img src="../assets/img/galeria/uñas1.jpg" alt="" class="img-fluid"></div>
                 <div class="containerImgGal col-sm-6 col-md-4"><img src="../assets/img/galeria/uñas2.jpg" alt="" class="img-fluid"></div>
                 <div class="containerImgGal col-sm-6 col-md-4"><img src="../assets/img/galeria/uñas3.jpg" alt="" class="img-fluid"></div>
@@ -64,23 +66,21 @@
             </div>
         </section>
       </main>
-      <footer class="footer">  
-        <section class="derechosReservados partesFooter">
-            <p>Valentime Nails</p>
-            <p>Av. Siempre viva, calle 123, Lomas de Zamora</p>
-            <p>Telefono: 15-2345-6789 | Email: info@valentimenails.com</p>
-            <p>© Valentime Nails 2023. Todos los derechos reservados</p>
-        </section>
-        <section class="partesFooter">   
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0168881864242!2d-58.3841453251142!3d-34.603734457497524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1694490684868!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-        <section class="partesFooter">
-            <h3>Redes sociales</h3>
-                <a class="ig" target="_blank" href="http://www.instagram.com"><iconify-icon icon="mdi:instagram" class="redes"></iconify-icon></a>
-                <a class="fb" target="_blank" href="http://www.facebook.com"><iconify-icon icon="ic:baseline-facebook" class="redes"></iconify-icon></a>
-                <a class="wsp" target="_blank" href="https://www.whatsapp.com/?lang=es_LA"><iconify-icon icon="ic:baseline-whatsapp" class="redes"></iconify-icon></a>
-        </section>
-        </footer>
+      <footer class="footer container-fluid p-5 d-flex flex-column">
+        <div class="hijosFooter d-flex justify-content-between">
+          <div>
+            <a class="linkVN" href="#"><h1 class="tituloFooter">Valentime Nails</h1></a>
+          </div>
+          <div>
+              <a class="iconoRS" target="_blank" href="https://www.instagram.com/valentime.nails/"><iconify-icon icon="mdi:instagram" class="redes"></iconify-icon></a>
+              <a class="iconoRS" target="_blank" href="http://www.facebook.com"><iconify-icon icon="ic:baseline-facebook" class="redes"></iconify-icon></a>
+              <a class="iconoRS" target="_blank" href="https://www.whatsapp.com/?lang=es_LA"><iconify-icon icon="ic:baseline-whatsapp" class="redes"></iconify-icon></a>
+          </div>
+        </div>
+        <div class="w-100 d-flex justify-content-center align-items-center">
+          <p class="texto">© Valentime Nails 2023. Todos los derechos reservados</p> 
+        </div>
+      </footer>
         <script src="../js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
