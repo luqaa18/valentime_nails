@@ -7,6 +7,8 @@
   
   body{
     background-color: #8F8181;
+    background-image: linear-gradient(to right bottom, #e8a7a8, #d19ea0, #ba9598, #a48d8f, #8d8485);
+    background-image: radial-gradient(circle, #f8b8bf, #edb3b9, #e1adb3, #d6a8ad, #cba3a7, #c29fa2, #ba9b9e, #b19799, #a89394, #a08f90, #978b8b, #8f8787);
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
