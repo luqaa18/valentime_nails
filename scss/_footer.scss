@@ -1,0 +1,33 @@
+.footer{
+    background-color: #F8B8BF;
+    padding: 20px 20px;
+  }
+  .hijosFooter{
+    border-bottom: 2px solid rgb(211, 139, 160);
+  }
+  .tituloFooter{
+    font-family: 'adelia';
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .iconoRS{
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.741);
+  }
+  .iconoRS:hover{
+    color: rgba(0, 0, 0, 0.741);
+  }
+
+  @media screen and (max-width:768px){
+    .tituloFooter{
+      font-size: 1rem;
+    }
+    .iconoRS{
+      font-size: 2rem;
+    }
+    .texto{
+      text-align: center;
+    }
+    }
