@@ -188,26 +188,28 @@ body {
 }
 
 .formulario {
-  width: 500px;
+  width: 400px;
   color: 0;
 }
 
-.contenedorContacto {
+.contenedorContactoMapa {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
+  padding: 50px;
+  background-color: #1f1718;
 }
-.contenedorContacto .textoContacto {
-  width: 400px;
-  height: 300px;
-  margin: 20px;
+.contenedorContactoMapa .textoContacto {
+  /* width: 400px;
+  height: 300px; */
 }
-.contenedorContacto .textoContacto .tituloBody {
+.contenedorContactoMapa .textoContacto .tituloBody {
   font-family: "Amatic SC", cursive;
   font-weight: 700;
   font-size: 3.5rem;
+  color: white;
 }
-.contenedorContacto .textoContacto .textoBody {
+.contenedorContactoMapa .textoContacto .textoBody {
   color: white;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 400, bold;
@@ -215,10 +217,42 @@ body {
   /* line-height: 18px; */
   text-align: justify;
 }
-.contenedorContacto .mapa {
-  margin: 20px;
+
+.contenedorContactoForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+.contenedorContactoForm .textoContacto {
+  /*  width: 400px;
+   height: 300px;
+   margin: 20px; */
+}
+.contenedorContactoForm .textoContacto .tituloBody {
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+.contenedorContactoForm .textoContacto .textoBody {
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400, bold;
+  font-size: 2rem;
+  /* line-height: 18px; */
+  text-align: justify;
 }
 
+@media screen and (max-width: 768px) {
+  .contenedorContactoForm {
+    flex-direction: row-reverse;
+    padding: 10px;
+  }
+  .contenedorContactoMapa {
+    flex-direction: row-reverse;
+    padding: 10px;
+  }
+}
 .footer {
   background-color: #F8B8BF;
   padding: 20px 20px;
