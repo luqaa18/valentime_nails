@@ -37,4 +37,14 @@
   }
 }
   
-  
+@media screen and (max-width:768px){
+  .linkVN{
+    .tituloNav{
+      font-size: 1.5rem;
+      &:hover{
+        scale: 1 ;
+        transition: 0;
+      }
+    }
+  }
+}

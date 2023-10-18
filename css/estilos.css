@@ -11,9 +11,9 @@ body {
   background-image: linear-gradient(to right bottom, #e8a7a8, #d19ea0, #ba9598, #a48d8f, #8d8485);
   background-image: radial-gradient(circle, #f8b8bf, #edb3b9, #e1adb3, #d6a8ad, #cba3a7, #c29fa2, #ba9b9e, #b19799, #a89394, #a08f90, #978b8b, #8f8787);
   background-image: linear-gradient(to bottom, #f8b8bf, #ecadb4, #dfa2a9, #d3989e, #c78d93, #c78d93, #c78d93, #c78d93, #d3989e, #dfa2a9, #ecadb4, #f8b8bf);
-  display: grid;
-  min-height: 100vh;
-  grid-template-rows: auto 1fr auto;
+  /*   display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto; */
 }
 
 /* carga de fuentes */
@@ -64,6 +64,15 @@ body {
   font-weight: bold;
 }
 
+@media screen and (max-width: 768px) {
+  .linkVN .tituloNav {
+    font-size: 1.5rem;
+  }
+  .linkVN .tituloNav:hover {
+    scale: 1;
+    transition: 0;
+  }
+}
 .containerBanner {
   background-image: url(../assets/img/banner_large.jpg);
   width: 100%;
@@ -187,11 +196,6 @@ body {
   z-index: 1;
 }
 
-.formulario {
-  width: 400px;
-  color: 0;
-}
-
 .contenedorContactoMapa {
   display: flex;
   flex-wrap: wrap;
@@ -200,8 +204,8 @@ body {
   background-color: #1f1718;
 }
 .contenedorContactoMapa .textoContacto {
-  /* width: 400px;
-  height: 300px; */
+  width: 300px;
+  height: 300px;
 }
 .contenedorContactoMapa .textoContacto .tituloBody {
   font-family: "Amatic SC", cursive;
@@ -242,15 +246,34 @@ body {
   /* line-height: 18px; */
   text-align: justify;
 }
+.contenedorContactoForm .formulario {
+  width: 400px;
+  color: 0;
+}
+.contenedorContactoForm .formulario .botones {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 @media screen and (max-width: 768px) {
-  .contenedorContactoForm {
-    flex-direction: row-reverse;
-    padding: 10px;
-  }
   .contenedorContactoMapa {
     flex-direction: row-reverse;
-    padding: 10px;
+    padding: 20px;
+  }
+  .contenedorContactoMapa .mapa {
+    margin-top: 20px;
+  }
+  .contenedorContactoMapa .mapa iframe {
+    width: 300px;
+    height: 300px;
+  }
+  .contenedorContactoForm {
+    flex-direction: row-reverse;
+    padding: 20px;
+  }
+  .contenedorContactoForm .formulario {
+    height: auto;
+    width: 300px;
   }
 }
 .footer {
