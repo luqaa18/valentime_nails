@@ -1,0 +1,31 @@
+.formulario{
+    width: 500px;
+    color: blue($color: #000000);
+}
+
+.contenedorContacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .textoContacto{
+        width: 400px;
+        height: 300px;
+        margin: 20px;
+        .tituloBody{
+            font-family: 'Amatic SC', cursive;
+            font-weight:700;
+            font-size: 3.5rem;
+            }
+        .textoBody{
+            color: white;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 400, bold;
+            font-size: 2rem;
+            /* line-height: 18px; */
+            text-align:justify;     
+        }
+    }
+    .mapa{
+       margin: 20px;
+    }
+}

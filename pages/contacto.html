@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contacto | Valentime Nails</title>
+        <meta name="description" content="Estamos ansiosos por atender tus consultas y agendar tu próxima visita. Contáctanos hoy mismo en Valentime Nails.">
+        <meta name="keywords" content="Valentime Nails, Valentime, Nails, uñas, contacto, contactanos, email, consulta, turno, reserva, escribinos">
         <link rel="icon" href="../favicon.ico">
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
         <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -40,13 +42,19 @@
             </div>
           </nav>
       </header> 
-      <main class="main">
-        <section class="contenedorSubtitulos">
-            <h2 class="subtitulo">Contactanos</h2>
-        </section>  
+      <main>
+        <div class="contenedorContacto bg-light">
+          <div class="textoContacto bg-secondary">
+            <h2 class="tituloBody">Contactanos</h2>
+            <p class="textoBody">Encontranos en <br> Av. Siempre Viva calle 123 <br> depto C <br> Lomas de Zamora </p>
+          </div>
+          <div class="mapa bg-primary">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26271.611053149954!2d-58.41298030068022!3d-34.60539089561537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1697642425692!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
         <section>
             <form action="404.html" method="post" class="formulario">
-                <div>
+               <!--  <div>
                     <label for="nombre">Nombre y apellido</label>
                 </div>
                 <div>
@@ -69,7 +77,27 @@
                 <div>
                     <input type="submit" value="Enviar formulario" name="enviar" id="enviar">
                     <input type="reset" value="Limpiar formulario" name="limpiar" id="limpiar">
+                </div> -->
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Ingrese su nombre</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
                 </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Ingrese su apellido</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div>
+                  <input type="submit" value="Enviar formulario" name="enviar" id="enviar">
+                  <input type="reset" value="Limpiar formulario" name="limpiar" id="limpiar">
+              </div>
             </form>
         </section>
       </main>

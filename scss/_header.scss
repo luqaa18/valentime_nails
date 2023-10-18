@@ -1,34 +1,40 @@
 .linkVN{
-    text-decoration: none;
+  text-decoration: none;
+  color: black;
+  &:hover{
     color: black;
-    &:hover{
-      color: black;
-    }
-    .tituloNav{
-      font-family: 'adelia';
-      font-size: 1.8rem;
-      padding-left: 100px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      margin: 0;
-    }
   }
-  
-  .colorNav {
-    background-color:$color-footer-header;
-  }
-    
-  .disenoLinks{
-    font-size: 1.2rem;
-    font-family: 'Amatic SC', cursive;
-    font-weight: 700;
-    font-size: 2.5rem;
+  .tituloNav{
+    font-family: 'adelia';
+    font-size: 1.8rem;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    scale: 1;
+    transition: 0.5s;
     &:hover{
+      scale: 1.1;
       transition: 0.5s;
-      border-radius: 10px;
-      background-color: rgb(239, 168, 180);
-      font-weight: bold;
     }
   }
+}
+  
+.colorNav {
+  background-color:$color-footer-header;
+}
+  
+.disenoLinks{
+  font-size: 1.2rem;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
+  font-size: 2.5rem;
+  &:hover{
+    transition: 0.5s;
+    border-radius: 10px;
+    background-color: rgb(239, 168, 180);
+    font-weight: bold;
+  }
+}
   
   
