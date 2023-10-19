@@ -19,7 +19,7 @@
             font-weight: 400, bold;
             font-size: 2rem;
             /* line-height: 18px; */
-            text-align:justify;     
+            text-align:left;     
         }
     }
     
@@ -44,7 +44,7 @@
             font-weight: 400, bold;
             font-size: 2rem;
             /* line-height: 18px; */
-            text-align:justify;     
+            text-align:left;     
         }
     }
     .formulario{
@@ -53,6 +53,11 @@
         .botones{
             display: flex;
             justify-content: space-evenly;
+            .boton{
+                background-color: pink;
+                border:2px solid rgb(201, 150, 158);
+                border-radius: 10px;
+            }
         }
     }
 }
