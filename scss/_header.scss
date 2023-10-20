@@ -21,7 +21,7 @@
 }
   
 .colorNav {
-  background-color:$color-footer-header;
+  background-color:map-get($map-colors, color-footer-header);
 }
   
 .disenoLinks{

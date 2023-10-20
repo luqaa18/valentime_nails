@@ -30,9 +30,6 @@
     justify-content: space-evenly;
     padding: 50px;
     .textoContacto{
-       /*  width: 400px;
-        height: 300px;
-        margin: 20px; */
         .tituloBody{
             font-family: 'Amatic SC', cursive;
             font-weight:700;
@@ -43,7 +40,6 @@
             font-family: 'Nunito Sans', sans-serif;
             font-weight: 400, bold;
             font-size: 2rem;
-            /* line-height: 18px; */
             text-align:left;     
         }
     }
@@ -77,6 +73,11 @@
     .contenedorContactoForm{
         flex-direction: row-reverse;
         padding: 20px;
+        .textoContacto{
+            .textoBody{
+                font-size: 1.7rem;
+            }
+        }
         .formulario{
             height: auto;
             width: 300px;

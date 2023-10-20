@@ -1,0 +1,6 @@
+@mixin estilosTexto($color, $fontweight, $fontsize,$align){
+    color: $color;
+    font-weight: $fontweight;
+    font-size: $fontsize;
+    text-align: $align;
+}
