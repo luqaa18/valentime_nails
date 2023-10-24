@@ -53,6 +53,11 @@
                 background-color: pink;
                 border:2px solid rgb(201, 150, 158);
                 border-radius: 10px;
+                &:hover{
+                    background-color: rgb(201, 150, 158);
+                    border: 2px solid pink;
+                    border-radius: 10px;
+                }
             }
         }
     }
