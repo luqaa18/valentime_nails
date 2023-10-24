@@ -1,0 +1,90 @@
+  .main{
+    .contenedorQS{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .contenedorParrafoNosotros{
+            .tituloBody{
+              font-family: 'Amatic SC', cursive;
+              font-weight:700;
+              font-size: 3.5rem;
+              padding: 0 10px;
+              text-align: left;
+            }
+            .textoBody{
+              color: white;
+              font-family: 'Nunito Sans', sans-serif;
+              font-weight: 400, bold;
+              font-size: 1.3rem;
+              text-align:left;
+              padding: 0 10px;
+              
+            }
+        }
+        .imagen{
+            padding: 20px 0;
+            img{
+                border-radius: 15px;
+            }
+        }
+    }
+    .textoBody{
+        color: white;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 400, bold;
+        font-size: 1.5rem;
+        text-align:left;
+        padding: 0 10px;
+        .linkPalabra{
+            text-decoration: none;
+            color: pink;
+            font-weight: 700;
+          }
+    }
+  }
+  
+  @media screen and (max-width:768px){
+    .main{
+        .contenedorQS{
+            margin: 0;
+            .contenedorParrafoNosotros{
+                width: 100%;
+                padding: 0;
+
+                .tituloBody{
+                  font-size: 2.5rem;
+                  text-align: center;
+                  padding-top: 20px;
+                }
+                .textoBody{
+                  color: white;
+                  font-family: 'Nunito Sans', sans-serif;
+                  font-weight: 400, bold;
+                  font-size: 1rem;
+                  text-align:left;
+                  padding: 10px 20px;
+                }
+            }
+            .imagen{
+                width: 320px;
+                height: 300px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    padding-left: 0;
+                }
+            }
+        }
+        .textoBody{
+            color: white;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 400, bold;
+            font-size: 1rem;
+            text-align:left;
+            padding: 10px 10px;
+        }
+        
+    }
+} 

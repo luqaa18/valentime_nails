@@ -1,0 +1,91 @@
+.contenedorContactoMapa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 50px;
+    background-color: #1f1718;
+    .textoContacto{
+        width: 300px;
+        height: 300px;
+        .tituloBody{
+            font-family: 'Amatic SC', cursive;
+            font-weight:700;
+            font-size: 3.5rem;
+            color: white;
+            }
+        .textoBody{
+            color: white;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 400, bold;
+            font-size: 2rem;
+            /* line-height: 18px; */
+            text-align:left;     
+        }
+    }
+    
+}
+.contenedorContactoForm{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 50px;
+    .textoContacto{
+        .tituloBody{
+            font-family: 'Amatic SC', cursive;
+            font-weight:700;
+            font-size: 3.5rem;
+            }
+        .textoBody{
+            color: white;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 400, bold;
+            font-size: 2rem;
+            text-align:left;     
+        }
+    }
+    .formulario{
+        width: 400px;
+        color: blue($color: #000000);
+        .botones{
+            display: flex;
+            justify-content: space-evenly;
+            .boton{
+                background-color: pink;
+                border:2px solid rgb(201, 150, 158);
+                border-radius: 10px;
+                &:hover{
+                    background-color: rgb(201, 150, 158);
+                    border: 2px solid pink;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .contenedorContactoMapa{
+        flex-direction: row-reverse;
+        padding: 20px;
+        .mapa{
+            margin-top: 20px;
+            iframe{
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+    .contenedorContactoForm{
+        flex-direction: row-reverse;
+        padding: 20px;
+        .textoContacto{
+            .textoBody{
+                font-size: 1.7rem;
+            }
+        }
+        .formulario{
+            height: auto;
+            width: 300px;
+        }
+    }
+}
