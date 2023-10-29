@@ -50,13 +50,21 @@
             display: flex;
             justify-content: space-evenly;
             .boton{
+                padding: 0.375rem 0.75rem;
+                font-size: 1rem;
+                border-radius: 0.25rem;
                 background-color: pink;
                 border:2px solid rgb(201, 150, 158);
                 border-radius: 10px;
                 &:hover{
+<<<<<<< HEAD
                     background-color: rgb(201, 150, 158);
                     border: 2px solid pink;
                     border-radius: 10px;
+=======
+                    background-color:rgb(201, 150, 158);
+                    border: 2px solid pink;
+>>>>>>> feature/preEntrega3
                 }
             }
         }
@@ -87,5 +95,28 @@
             height: auto;
             width: 300px;
         }
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .animated {
+        /*CSS transitions*/
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        /*CSS transforms*/
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
     }
 }
