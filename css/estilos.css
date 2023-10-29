@@ -411,9 +411,16 @@ body {
   justify-content: space-evenly;
 }
 .contenedorContactoForm .formulario .botones .boton {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
   background-color: pink;
   border: 2px solid rgb(201, 150, 158);
   border-radius: 10px;
+}
+.contenedorContactoForm .formulario .botones .boton:hover {
+  background-color: rgb(201, 150, 158);
+  border: 2px solid pink;
 }
 
 @media screen and (max-width: 768px) {
