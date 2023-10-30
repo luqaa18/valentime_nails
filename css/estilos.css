@@ -7,13 +7,15 @@
 }
 
 body {
-  background-color: #8F8181;
-  background-image: linear-gradient(to right bottom, #e8a7a8, #d19ea0, #ba9598, #a48d8f, #8d8485);
+  background-color: black;
+  /* background-image: linear-gradient(to right bottom, #e8a7a8, #d19ea0, #ba9598, #a48d8f, #8d8485);
   background-image: radial-gradient(circle, #f8b8bf, #edb3b9, #e1adb3, #d6a8ad, #cba3a7, #c29fa2, #ba9b9e, #b19799, #a89394, #a08f90, #978b8b, #8f8787);
   background-image: linear-gradient(to bottom, #f8b8bf, #ecadb4, #dfa2a9, #d3989e, #c78d93, #c78d93, #c78d93, #c78d93, #d3989e, #dfa2a9, #ecadb4, #f8b8bf);
-  /*   display: grid;
-    min-height: 100vh;
-    grid-template-rows: auto 1fr auto; */
+  background-image: linear-gradient(to right top, #c42c5f, #b72757, #aa2350, #9d1e48, #911a41, #80193a, #701734, #60152d, #491424, #32121b, #1e0c11, #000000);
+  background-image: linear-gradient(to right top, #801438, #60152d, #411421, #240f15, #000000); */
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
 }
 
 /* carga de fuentes */
@@ -25,14 +27,19 @@ body {
   display: flex;
 }
 
-.linkVN {
+.colorNav {
+  background-color: black;
+  position: sticky;
+  top: 100;
+}
+.colorNav .linkVN {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
 }
-.linkVN:hover {
-  color: black;
+.colorNav .linkVN:hover {
+  color: rgb(255, 255, 255);
 }
-.linkVN .tituloNav {
+.colorNav .linkVN .tituloNav {
   font-family: "adelia";
   font-size: 1.8rem;
   padding-left: 20px;
@@ -41,69 +48,74 @@ body {
   margin: 0;
   scale: 1;
   transition: 0.5s;
+  color: white;
 }
-.linkVN .tituloNav:hover {
+.colorNav .linkVN .tituloNav:hover {
   scale: 1.1;
   transition: 0.5s;
 }
-
-.colorNav {
-  background-color: #F8B8BF;
-}
-
-.disenoLinks {
+.colorNav .disenoLinks {
+  text-decoration: none;
+  padding: 0 20px;
+  color: white;
   font-size: 1.2rem;
   font-family: "Amatic SC", cursive;
   font-weight: 700;
   font-size: 2.5rem;
 }
-.disenoLinks:hover {
+.colorNav .disenoLinks:hover {
   transition: 0.5s;
   border-radius: 10px;
-  background-color: rgb(239, 168, 180);
+  background-color: rgb(77, 77, 77);
   font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
-  .linkVN .tituloNav {
+  .colorNav .linkVN .tituloNav {
     font-size: 1.5rem;
   }
-  .linkVN .tituloNav:hover {
+  .colorNav .linkVN .tituloNav:hover {
     scale: 1;
     transition: 0;
   }
+  .colorNav .colorMH {
+    background-color: rgba(255, 255, 255, 0.253);
+    border: 2px solid rgba(255, 255, 255, 0.253);
+    border-radius: 5px;
+  }
 }
 .containerBanner {
-  background-image: url(../assets/img/banner_large.jpg);
+  background: linear-gradient(to right bottom, #000000, #000000), url(../assets/img/banner2.jpeg);
   width: 100%;
   background-size: cover;
   height: 70vh;
   background-position: center;
-  background-color: rgb(50, 50, 50);
   background-blend-mode: soft-light;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 100px;
 }
 .containerBanner .tituloBanner1 {
   font-family: "Amatic SC", cursive;
   font-weight: 700;
   font-size: 6rem;
   color: white;
-  text-align: center;
+  text-align: left;
 }
 .containerBanner .textoBanner {
   color: white;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
-  text-align: center;
+  text-align: left;
 }
 
 .contenedorParrafoIndex {
   width: 100%;
 }
 .contenedorParrafoIndex .tituloBody {
+  color: white;
   font-family: "Amatic SC", cursive;
   font-weight: 700;
   font-size: 3.5rem;
@@ -166,6 +178,7 @@ body {
   }
 }
 .main .tituloBody {
+  color: white;
   font-family: "Amatic SC", cursive;
   font-weight: 700;
   font-size: 3.5rem;
@@ -215,6 +228,7 @@ body {
   width: 100%;
 }
 .contenedorParrafoGaleria .tituloBody {
+  color: white;
   font-family: "Amatic SC", cursive;
   font-weight: 700;
   font-size: 3.5rem;
@@ -285,6 +299,7 @@ body {
   justify-content: space-evenly;
 }
 .main .contenedorQS .contenedorParrafoNosotros .tituloBody {
+  color: white;
   font-family: "Amatic SC", cursive;
   font-weight: 700;
   font-size: 3.5rem;
@@ -370,6 +385,7 @@ body {
   height: 300px;
 }
 .contenedorContactoMapa .textoContacto .tituloBody {
+  color: white;
   font-family: "Amatic SC", cursive;
   font-weight: 700;
   font-size: 3.5rem;
@@ -421,10 +437,7 @@ body {
 .contenedorContactoForm .formulario .botones .boton:hover {
   background-color: rgb(201, 150, 158);
   border: 2px solid pink;
-<<<<<<< HEAD
   border-radius: 10px;
-=======
->>>>>>> feature/preEntrega3
 }
 
 @media screen and (max-width: 768px) {
@@ -451,25 +464,55 @@ body {
     width: 300px;
   }
 }
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .animated {
+    /*CSS transitions*/
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+  }
+}
 .footer {
-  background-color: #F8B8BF;
+  background-color: black;
   padding: 20px 20px;
 }
 .footer .hijosFooter {
-  border-bottom: 2px solid rgb(211, 139, 160);
+  border-bottom: 2px solid rgb(255, 0, 85);
 }
-.footer .hijosFooter .tituloFooter {
+.footer .hijosFooter .linkVN {
+  text-decoration: none;
+}
+.footer .hijosFooter .linkVN .tituloFooter {
   font-family: "adelia";
   font-size: 1.8rem;
   margin: 0;
   padding: 0;
+  color: white;
 }
 .footer .hijosFooter .iconoRS {
   font-size: 3rem;
-  color: rgba(0, 0, 0, 0.741);
+  color: rgba(255, 255, 255, 0.741);
 }
 .footer .hijosFooter .iconoRS:hover {
-  color: rgba(0, 0, 0, 0.741);
+  color: rgb(255, 255, 255);
+}
+.footer .texto {
+  color: white;
 }
 
 @media screen and (max-width: 768px) {

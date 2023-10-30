@@ -1,6 +1,7 @@
 .contenedorParrafoGaleria{
   width: 100%;
   .tituloBody{
+    color: map-get($map-colors,color-titulos);
     font-family: 'Amatic SC', cursive;
     font-weight:700;
     font-size: 3.5rem;
@@ -8,7 +9,7 @@
     text-align: center;
   }
   .textoBody{
-    color: white;
+    color: map-get($map-colors, color-subtitulos);
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
     font-size: 1.5rem;

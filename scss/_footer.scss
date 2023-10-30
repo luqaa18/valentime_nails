@@ -1,21 +1,28 @@
 .footer{
-  background-color:map-get($map-colors,color-footer-header );
+  background-color:map-get($map-colors,color-header );
   padding: 20px 20px;
   .hijosFooter{
-    border-bottom: 2px solid rgb(211, 139, 160);
-    .tituloFooter{
-      font-family: 'adelia';
-      font-size: 1.8rem;
-      margin: 0;
-      padding: 0;
+    border-bottom: 2px solid rgb(255, 0, 85);
+    .linkVN{
+      text-decoration: none;
+      .tituloFooter{
+        font-family: 'adelia';
+        font-size: 1.8rem;
+        margin: 0;
+        padding: 0;
+        color: white;
+      }
     }
     .iconoRS{
       font-size: 3rem;
-      color: rgba(0, 0, 0, 0.741);
+      color: rgba(255, 255, 255, 0.741);
       &:hover{
-        color: rgba(0, 0, 0, 0.741);
+        color: rgb(255, 255, 255);
       }
     }
+  }
+  .texto{
+    color: white;
   }
 }
   

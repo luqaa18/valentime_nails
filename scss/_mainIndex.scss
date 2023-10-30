@@ -1,40 +1,41 @@
 .containerBanner{
-  background-image: url(../assets/img/banner_large.jpg);
+  background: linear-gradient(to right bottom, #000000, #000000), url(../assets/img/banner2.jpeg);
   width: 100%;
   background-size:cover;
   height: 70vh;
   background-position: center;
-  background-color: rgb(50, 50, 50);
   background-blend-mode: soft-light;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 100px;
   .tituloBanner1{
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
     font-size: 6rem;
     color: white;
-    text-align: center;
+    text-align: left;
   }
   .textoBanner{
     color: white;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
-    text-align:center;
+    text-align:left;
   }
 }
 
 .contenedorParrafoIndex{
   width: 100%;
   .tituloBody{
+    color: map-get($map-colors,color-titulos);
     font-family: 'Amatic SC', cursive;
     font-weight:700;
     font-size: 3.5rem;
     padding: 0 50px;
   }
   .textoBody{
-    color: white;
+    color: map-get($map-colors, color-subtitulos);
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
     font-size: 1.3rem;
