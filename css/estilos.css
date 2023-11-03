@@ -560,11 +560,11 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .footer .hijosFooter .tituloFooter {
+  .footer .hijosFooter .linkVN .tituloFooter {
     font-size: 1rem;
   }
   .footer .hijosFooter .iconoRS {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .footer .texto {
     text-align: center;
