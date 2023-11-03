@@ -18,7 +18,7 @@
         <nav class="navbar navbar-expand-lg navbar-light colorNav">
             <div class="container-fluid ">
               <a class="linkVN" href="../index.html"><h1 class="tituloNav">Valentime Nails</h1></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler colorMH" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse text-end" id="navbarSupportedContent">
@@ -58,23 +58,23 @@
             <p class="textoBody">¿Tenés alguna consulta? <br> Mandanos un mensaje...</p>
           </div>
           <div class="formulario">
-            <form action="./404.html" method="post">
+            <form action="./404.html" method="get">
               <div class="mb-3">
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre" required>
               </div>
               <div class="mb-3">
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Apellido" required>
               </div>
             <div class="mb-3">
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@email.com" required>
             </div>
             <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <label for="exampleFormControlTextarea1" class="form-label textoImportante">Comentarios</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
             </div>
             <div class="d-flex botones">
-              <input type="submit" class="btn boton" value="Enviar">
               <input type="reset" class="boton" value="Limpiar">
+              <input type="submit" class="btn boton" value="Enviar">
             </div>            
           </form>
           </div>

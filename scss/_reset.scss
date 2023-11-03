@@ -12,7 +12,5 @@ body{
   background-image: linear-gradient(to bottom, #f8b8bf, #ecadb4, #dfa2a9, #d3989e, #c78d93, #c78d93, #c78d93, #c78d93, #d3989e, #dfa2a9, #ecadb4, #f8b8bf);
   background-image: linear-gradient(to right top, #c42c5f, #b72757, #aa2350, #9d1e48, #911a41, #80193a, #701734, #60152d, #491424, #32121b, #1e0c11, #000000);
   background-image: linear-gradient(to right top, #801438, #60152d, #411421, #240f15, #000000); */
-  display: grid;
-  min-height: 100vh;
-  grid-template-rows: auto 1fr auto;
+
 }

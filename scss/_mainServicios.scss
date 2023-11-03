@@ -1,9 +1,9 @@
 .main{
   .tituloBody{
     color: map-get($map-colors,color-titulos);
-    font-family: 'Amatic SC', cursive;
-    font-weight:700;
-    font-size: 3.5rem;
+    font-family: $fuente-principal;
+    font-weight:400;
+    font-size: 2.5rem;
     padding: 0 10px;
     text-align: center;
   }
@@ -18,15 +18,15 @@
     }
   }
   .fondoCard{
-    background-color: map-get($map-colors, color-footer-header);
     border-radius: 15px;
     margin: 20px;
     .titulosTiposUnias{
-      @include estilosTexto(white, 700, 3rem, left);
-      font-family:'Amatic SC', cursive;
+      @include estilosTexto(white, 400, 1.5rem, left);
+      font-family:$fuente-principal;
     } 
     .textoTiposUnias{
       @include estilosTexto(rgb(255, 255, 255), 400, 1rem, left);
+      font-family:$fuente-secundaria;
       line-height:30px;
     }
   }

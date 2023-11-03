@@ -2,16 +2,16 @@
   width: 100%;
   .tituloBody{
     color: map-get($map-colors,color-titulos);
-    font-family: 'Amatic SC', cursive;
-    font-weight:700;
-    font-size: 3.5rem;
+    font-family: $fuente-principal;
+    font-weight:400;
+    font-size: 2.5rem;
     padding: 0 50px;
     text-align: center;
   }
   .textoBody{
     color: map-get($map-colors, color-subtitulos);
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 400;
+    font-family: $fuente-secundaria;
+    font-weight: 300;
     font-size: 1.5rem;
     text-align:center;
     padding: 0 50px;
@@ -21,8 +21,8 @@
 .containerPrincipalGal{
   .containerImgGal{
     width: 300px;
-    height: 350px;
-    background-color: rgb(235, 180, 182);
+    height: 300px;
+    /* background-color: rgb(235, 180, 182); */
     border-radius: 15px;
     padding: 5px;
     margin-left: 10px;
@@ -55,11 +55,7 @@
       padding-top: 20px;
     }
     .textoBody{
-      color: white;
-      font-family: 'Nunito Sans', sans-serif;
-      font-weight: 400;
       font-size: 1rem;
-      text-align:center;
       padding: 10px 20px;
     }
   }

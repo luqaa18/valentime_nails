@@ -8,16 +8,16 @@
         .contenedorParrafoNosotros{
             .tituloBody{
               color: map-get($map-colors,color-titulos);
-              font-family: 'Amatic SC', cursive;
-              font-weight:700;
-              font-size: 3.5rem;
+              font-family: $fuente-principal;
+              font-weight:400;
+              font-size: 2.5rem;
               padding: 0 10px;
               text-align: left;
             }
             .textoBody{
               color: map-get($map-colors, color-subtitulos);
-              font-family: 'Nunito Sans', sans-serif;
-              font-weight: 400, bold;
+              font-family: $fuente-secundaria;
+              font-weight: 300;
               font-size: 1.3rem;
               text-align:left;
               padding: 0 10px;
@@ -33,8 +33,8 @@
     }
     .textoBody{
         color: white;
-        font-family: 'Nunito Sans', sans-serif;
-        font-weight: 400, bold;
+        font-family: $fuente-secundaria;
+        font-weight: 400;
         font-size: 1.5rem;
         text-align:left;
         padding: 0 10px;
@@ -60,12 +60,8 @@
                   padding-top: 20px;
                 }
                 .textoBody{
-                  color: white;
-                  font-family: 'Nunito Sans', sans-serif;
-                  font-weight: 400, bold;
                   font-size: 1rem;
-                  text-align:left;
-                  padding: 10px 20px;
+                  padding: 10px 15px;
                 }
             }
             .imagen{

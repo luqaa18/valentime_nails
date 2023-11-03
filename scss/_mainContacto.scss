@@ -9,17 +9,16 @@
         height: 300px;
         .tituloBody{
             color: map-get($map-colors,color-titulos);
-            font-family: 'Amatic SC', cursive;
-            font-weight:700;
-            font-size: 3.5rem;
+            font-family: 'Merriweather', serif;
+            font-weight:300;
+            font-size: 3rem;
             color: white;
             }
         .textoBody{
             color: map-get($map-colors, color-subtitulos);
-            font-family: 'Nunito Sans', sans-serif;
-            font-weight: 400, bold;
+            font-family: 'Mulish', sans-serif;
+            font-weight: 300, bold;
             font-size: 2rem;
-            /* line-height: 18px; */
             text-align:left;     
         }
     }
@@ -54,9 +53,10 @@
                 padding: 0.375rem 0.75rem;
                 font-size: 1rem;
                 border-radius: 0.25rem;
-                background-color: pink;
+                background-color: rgba(77, 77, 77, 0.301);
                 border:2px solid rgb(201, 150, 158);
                 border-radius: 10px;
+                color: white;
                 &:hover{
                     background-color: rgb(201, 150, 158);
                     border: 2px solid pink;
@@ -94,25 +94,3 @@
     }
 }
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-    .animated {
-        /*CSS transitions*/
-        -o-transition-property: none !important;
-        -moz-transition-property: none !important;
-        -ms-transition-property: none !important;
-        -webkit-transition-property: none !important;
-        transition-property: none !important;
-        /*CSS transforms*/
-        -o-transform: none !important;
-        -moz-transform: none !important;
-        -ms-transform: none !important;
-        -webkit-transform: none !important;
-        transform: none !important;
-        /*CSS animations*/
-        -webkit-animation: none !important;
-        -moz-animation: none !important;
-        -o-animation: none !important;
-        -ms-animation: none !important;
-        animation: none !important;
-    }
-}
